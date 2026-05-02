@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hitorinku（一人工） プライバシーポリシー / Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; color: #222; }
+  h1 { border-bottom: 2px solid #1E3A5F; padding-bottom: .4rem; }
+  h2 { color: #1E3A5F; margin-top: 2rem; }
+  h3 { margin-top: 1.4rem; }
+  .lang-switch { text-align: right; margin-bottom: 1rem; }
+  .lang-switch a { margin-left: 1rem; color: #1E3A5F; text-decoration: none; }
+  .meta { color: #777; font-size: .9rem; }
+  hr.section { margin: 3rem 0; border: 0; border-top: 1px dashed #ccc; }
+  ul { padding-left: 1.4rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #ddd; padding: .5rem .8rem; text-align: left; }
+  th { background: #f6f6f0; }
+  a { color: #1E3A5F; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="#ja">日本語</a> | <a href="#en">English</a>
+</div>
+
+<!-- ============================== JAPANESE ============================== -->
+<section id="ja">
+<h1>Hitorinku（一人工） プライバシーポリシー</h1>
+<p class="meta">最終更新日: 2026年5月2日 / 発効日: 2026年5月2日</p>
+
+<p>本プライバシーポリシー（以下「本ポリシー」）は、Ryo Yoshioka（以下「当方」）が提供するモバイルアプリケーション「Hitorinku（一人工）」（以下「本アプリ」）における、利用者（以下「ユーザー」）の個人情報の取扱いについて定めるものです。本アプリは、建設業の経営者および従業員を対象とした出勤・人工管理アプリです。</p>
+
+<h2>1. 取得する情報</h2>
+<p>本アプリは以下の情報を取得・利用します。</p>
+<table>
+  <thead><tr><th>情報の種類</th><th>取得目的</th><th>保存場所</th></tr></thead>
+  <tbody>
+    <tr><td>出勤・人工データ（社員名・現場名・勤務日数・有給記録等）</td><td>本アプリの中核機能（出勤管理・人工集計・PDF出力）の提供</td><td>端末内（SQLite）</td></tr>
+    <tr><td>Apple ID 情報（メールアドレス・氏名）</td><td>Apple Sign-In による経営者アカウント識別</td><td>Supabase（経営者のサインイン時）</td></tr>
+    <tr><td>匿名認証ID（社員モード）</td><td>社員アプリの招待コード参加・有給申請の送受信</td><td>Supabase（個人を特定する情報は含みません）</td></tr>
+    <tr><td>有給申請データ（日付・理由）</td><td>社員から経営者への有給申請の送受信</td><td>Supabase（承認後は経営者の端末に取り込み）</td></tr>
+    <tr><td>招待コード</td><td>社員アプリの参加識別</td><td>Supabase（30日で失効）</td></tr>
+    <tr><td>購入情報（サブスクリプション状態）</td><td>プロ機能の提供・課金管理</td><td>RevenueCat および Apple サーバー</td></tr>
+    <tr><td>生体認証（FaceID／TouchID）</td><td>経営者モードの起動時認証</td><td>端末内のみ。サーバー保存なし</td></tr>
+    <tr><td>通知設定</td><td>有給申請・承認のリマインダー</td><td>端末内</td></tr>
+  </tbody>
+</table>
+
+<h2>2. 利用目的</h2>
+<ul>
+  <li>本アプリの機能提供（出勤管理・人工集計・PDF出力・有給管理）</li>
+  <li>経営者アカウントの認証および社員アプリとの連携</li>
+  <li>サブスクリプションの管理および購入確認</li>
+  <li>アプリの不具合修正・品質向上</li>
+  <li>法令上の義務の遵守</li>
+</ul>
+
+<h2>3. 第三者への提供および外部サービスの利用</h2>
+<p>本アプリは以下の第三者サービスを利用しており、それぞれのサービスにユーザー情報の一部を送信します。各サービスのプライバシーポリシーが適用されます。</p>
+<table>
+  <thead><tr><th>サービス</th><th>用途</th><th>送信される情報</th></tr></thead>
+  <tbody>
+    <tr><td>Apple Inc.</td><td>認証・課金</td><td>Apple ID 情報、購入情報</td></tr>
+    <tr><td>Supabase</td><td>経営者認証・社員モード連携・有給申請の送受信</td><td>Apple ID 情報・匿名認証ID・有給申請データ・招待コード</td></tr>
+    <tr><td>RevenueCat</td><td>サブスクリプション管理</td><td>購入トークン・匿名化された利用統計</td></tr>
+  </tbody>
+</table>
+<p>当方は、法令に基づく場合を除き、ユーザーの同意なく上記以外の第三者に個人情報を提供することはありません。</p>
+
+<h2>4. 情報の保持期間</h2>
+<p>端末内に保存されたデータは、ユーザーが本アプリをアンインストールするまで、または手動で削除するまで保持されます。Supabase に保存されたデータは、アカウント削除のリクエストを受領した時点で速やかに削除します。招待コードは発行から30日経過後に自動的に失効します。</p>
+
+<h2>5. ユーザーの権利</h2>
+<p>ユーザーは、当方に対して以下を請求することができます。</p>
+<ul>
+  <li>保有する個人情報の開示</li>
+  <li>誤りのある個人情報の訂正</li>
+  <li>個人情報の削除（アカウント削除を含む）</li>
+  <li>個人情報の利用停止</li>
+</ul>
+<p>請求は本ポリシー末尾の連絡先までご連絡ください。</p>
+
+<h2>6. セキュリティ</h2>
+<p>当方は、個人情報への不正アクセス・紛失・改ざん・漏えいを防止するため、合理的な安全管理措置を講じます。なお、インターネット上での通信に関しては、すべて TLS（HTTPS）で暗号化されます。</p>
+
+<h2>7. 子どものプライバシー</h2>
+<p>本アプリは、13歳未満の児童を主たる対象としていません。13歳未満の児童から個人情報を意図的に収集することはありません。万が一そのような情報が送信されたことが判明した場合、速やかに削除します。</p>
+
+<h2>8. 本ポリシーの変更</h2>
+<p>本ポリシーは、法令の改正やサービス内容の変更に伴い改訂されることがあります。重要な変更がある場合は、本アプリ内またはApp Store上で通知します。</p>
+
+<h2>9. 連絡先</h2>
+<p>
+本アプリの運営者: Ryo Yoshioka<br>
+お問い合わせ: <a href="mailto:roygraphy@first-shutter.com">roygraphy@first-shutter.com</a>
+</p>
+
+</section>
+
+<hr class="section">
+
+<!-- ============================== ENGLISH ============================== -->
+<section id="en">
+<h1>Hitorinku Privacy Policy</h1>
+<p class="meta">Last updated: May 2, 2026 / Effective date: May 2, 2026</p>
+
+<p>This Privacy Policy ("Policy") describes how Ryo Yoshioka ("we", "us", or "our") collects, uses, and shares information of users ("you") of the mobile application "Hitorinku" ("App"). The App is an attendance and labor-day management tool for owners and employees in the construction industry.</p>
+
+<h2>1. Information We Collect</h2>
+<table>
+  <thead><tr><th>Type</th><th>Purpose</th><th>Storage</th></tr></thead>
+  <tbody>
+    <tr><td>Attendance / labor-day data (employee names, worksites, days worked, leave records)</td><td>Core functionality (attendance management, labor-day aggregation, PDF export)</td><td>On-device (SQLite)</td></tr>
+    <tr><td>Apple ID info (email, name)</td><td>Owner account identification via Apple Sign-In</td><td>Supabase (only when an owner signs in)</td></tr>
+    <tr><td>Anonymous auth ID (employee mode)</td><td>Joining via invite code, sending leave requests</td><td>Supabase (does not contain personally identifying information)</td></tr>
+    <tr><td>Leave request data (date, reason)</td><td>Sending leave requests from employee to owner</td><td>Supabase (imported to owner device upon approval)</td></tr>
+    <tr><td>Invite code</td><td>Identifying employee app participants</td><td>Supabase (expires after 30 days)</td></tr>
+    <tr><td>Purchase info (subscription status)</td><td>Providing pro features, billing management</td><td>RevenueCat and Apple servers</td></tr>
+    <tr><td>Biometric authentication (Face ID / Touch ID)</td><td>Owner mode launch authentication</td><td>On-device only. Not stored on servers</td></tr>
+    <tr><td>Notification settings</td><td>Reminders for leave requests / approvals</td><td>On-device</td></tr>
+  </tbody>
+</table>
+
+<h2>2. Purposes of Use</h2>
+<ul>
+  <li>Providing the App's functionality (attendance management, labor-day aggregation, PDF export, leave management)</li>
+  <li>Owner account authentication and employee app integration</li>
+  <li>Subscription management and purchase verification</li>
+  <li>Bug fixes and quality improvement</li>
+  <li>Compliance with legal obligations</li>
+</ul>
+
+<h2>3. Third-Party Services</h2>
+<p>The App uses the following third-party services. Each service's privacy policy applies to data they receive.</p>
+<table>
+  <thead><tr><th>Service</th><th>Use</th><th>Information sent</th></tr></thead>
+  <tbody>
+    <tr><td>Apple Inc.</td><td>Authentication and billing</td><td>Apple ID info, purchase info</td></tr>
+    <tr><td>Supabase</td><td>Owner authentication, employee-mode integration, leave request transport</td><td>Apple ID info, anonymous auth ID, leave request data, invite codes</td></tr>
+    <tr><td>RevenueCat</td><td>Subscription management</td><td>Purchase tokens, anonymized usage stats</td></tr>
+  </tbody>
+</table>
+<p>We do not provide personal information to third parties other than the above without your consent, except as required by law.</p>
+
+<h2>4. Data Retention</h2>
+<p>On-device data is retained until you uninstall the App or delete it manually. Data stored in Supabase will be promptly deleted upon receipt of an account deletion request. Invite codes automatically expire 30 days after issuance.</p>
+
+<h2>5. Your Rights</h2>
+<p>You may request:</p>
+<ul>
+  <li>Disclosure of personal information we hold</li>
+  <li>Correction of inaccurate personal information</li>
+  <li>Deletion of personal information (including account deletion)</li>
+  <li>Suspension of use of personal information</li>
+</ul>
+<p>Please contact us at the address below to make such requests.</p>
+
+<h2>6. Security</h2>
+<p>We take reasonable security measures to prevent unauthorized access to, loss of, alteration of, or leakage of personal information. All communication over the internet is encrypted with TLS (HTTPS).</p>
+
+<h2>7. Children's Privacy</h2>
+<p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that such information has been submitted, we will delete it promptly.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>This Policy may be revised in response to changes in laws or services. Significant changes will be notified via the App or the App Store.</p>
+
+<h2>9. Contact</h2>
+<p>
+Operator: Ryo Yoshioka<br>
+Contact: <a href="mailto:roygraphy@first-shutter.com">roygraphy@first-shutter.com</a>
+</p>
+
+</section>
+
+</body>
+</html>
